@@ -1,0 +1,70 @@
+<!--
+ * Author: Sky
+ * 📧tswme@foxmail.com
+-->
+<!DOCTYPE html>
+<html class="js cssanimations">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>M3U8播放器 - 微信公众号: 天视网导航</title>
+    <link rel="stylesheet" type="text/css" href="css/amazeui.flat.min.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+  </head>
+  <body>
+    <div class="am-topbar am-topbar-inverse">
+      <div class="am-container">
+        <p class="am-topbar-brand">
+          <a href="https://fdmus.github.io/tsw/" class="am-topbar-logo"><b>天视网导航℠</b></a>
+        </p> 
+        <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+          <div class="am-topbar-right">
+            <a class="am-btn am-btn-primary am-topbar-btn am-btn-sm" title="天视网导航" href="https://fdmus.github.io/tsw/" target="_blank">github主页</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="am-container">
+      <div class="logo">M3U8播放器</div>
+      <div class="am-u-lg-6 input-div">
+        <form method="post" id="str-post" class="am-input-group am-input-group-primary">
+          <input type="text" name="url" placeholder="请输入或粘贴m3u8链接..." autocomplete="off" class="am-form-field s-input">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-primary" type="submit">解析</button>
+          </span>
+        </form>
+      </div>
+      <video id="player" controls></video>
+    </div>
+<div class="am-alert am-alert-secondary" style="">
+<p></p>
+<pre><i class="fa fa-bullhorn" aria-hidden="true"></i> ：<span id="hitokoto">获取中...请检查网络连接...</span></pre>
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+<p style="">M3U8文件格式
+M3U8文件是指UTF-8编码格式的M3U8文件；M3U8文件是记录了一个索引纯文本文件，打开它时播放软件并不是播放它，而是根据它的索引找到对应的音视频文件的网络地址进行在线播放。
+<br>M3U8是一种播放多媒体列表的文件格式，它的设计初衷是为了播放音频文件；比如MP3，但是越来越多的软件现在用来播放视频文件列表，M3U8也可以指定在线流媒体音频源，很多播放器和软件都支持M3U8文件格式。</p>
+    </div>
+  </div>
+<footer>
+<div class="am-container">
+<p>
+侵删联系!📧tswme@foxmail.com
+<br>
+<!-- 
+<span id="busuanzi_container_site_pv">访问量
+<span id="busuanzi_value_site_pv"></span>次</span>，访客数
+<span id="busuanzi_value_site_uv"></span>人次
+<br> -->
+<p style="text-align: center;">
+Sky™.2024 ☕
+</p>
+</div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+    <script src="js/hls.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
